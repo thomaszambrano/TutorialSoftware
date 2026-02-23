@@ -1,0 +1,18 @@
+{% extends 'pages/base.html' %}
+{% block title %} {{title}} {% endblock %}
+{% block header_title %} {{subtitle}} {% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <div class="alert alert-success mt-4" role="alert">
+                <h4 class="alert-heading">Product created!</h4>
+                <p>Your product has been successfully created.</p>
+                <hr>
+                <a href="{% url 'index' %}" class="btn btn-primary me-2">View Products</a>
+                <a href="{% url 'form' %}" class="btn btn-secondary">Create Another</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
